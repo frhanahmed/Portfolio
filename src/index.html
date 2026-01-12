@@ -1,0 +1,461 @@
+<!DOCTYPE html class="scroll-smooth">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farhan Ahmed</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+    <link rel="stylesheet" href="input.css">
+
+  </head>
+<style>
+  
+
+</style>
+
+<body class=" bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
+
+<!-- Navbar Section -->
+<nav id="navbar" class=" text-black font-bold fixed top-0 z-50 w-full bg-green-400/90 backdrop-blur-md transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+<label class="relative inline-flex items-center cursor-pointer">
+  <input type="checkbox" class="sr-only" onchange="toggleTheme(this)" />
+
+  <div class="w-14 h-7 bg-gray-300 dark:bg-gray-600 rounded-full relative transition-colors">
+    <div class="absolute inset-0 flex items-center justify-between px-1 text-xs pointer-events-none select-none">
+    <span>🌙</span>
+    <span>☀️</span>
+    </div>
+    <span id="toggleSlider" class="absolute top-1 left-1 w-5 h-5 bg-white rounded-full transition-transform duration-300"
+    ></span>
+  </div>
+</label>
+    <div class="hidden md:flex gap-8 font-semibold">
+      <a href="#welcomePage" class="nav-link">Home</a>
+      <a href="#aboutPage" class="nav-link">About</a>
+      <a href="#skillSection" class="nav-link">Skills</a>
+      <a href="#projectSection" class="nav-link">Projects</a>
+      <a href="#contactPage" class="nav-link">Contact</a>
+    </div>
+
+    <!--Button For Mobile Screen -->
+    <button onclick="toggleMenu()" class="md:hidden text-2xl font-bold" aria-label="Open Menu">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile View -->
+  <div
+    id="mobileMenu"
+    class="hidden md:hidden bg-green-400 px-6 py-4 flex flex-col gap-4 font-semibold"
+  >
+    <a href="#welcomePage" onclick="toggleMenu()">Home</a>
+    <a href="#aboutPage" onclick="toggleMenu()">About</a>
+    <a href="#skillSection" onclick="toggleMenu()">Skills</a>
+    <a href="#projectSection" onclick="toggleMenu()">Projects</a>
+    <a href="#contactPage" onclick="toggleMenu()">Contact</a>
+  </div>
+</nav>
+
+<!-- Welcome Page starts here -->
+<section id="welcomePage" class="bg-gray-900 text-white dark:bg-white dark:text-black pt-24 min-h-screen flex flex-col md:flex-row">
+  <!-- Greetings Section-->
+  <div class="md:w-2/3 w-full flex flex-col justify-center px-8 md:px-20 py-12">
+    <h1 class="text-green-400 text-4xl md:text-6xl font-bold">Hello,</h1>
+    <h1 class="text-green-400 text-4xl md:text-6xl font-bold mt-2">Welcome to My Portfolio!</h1>
+    <p class="text-lg md:text-2xl mt-6 dark:text-black text-gray-200">I'm excited to share my journey with you.</p>
+  </div>
+
+  <!--Image-->
+    <div class="md:w-1/3 w-full flex justify-center items-center py-12">
+    <img src="Photo1.jpg" alt="Farhan Ahmed" class="w-40 h-40 md:w-64 md:h-70 rounded-xl border-4 border-green-400 object-cover shadow-xl"/>
+  </div>
+</section>
+<!-- Welcome page ends here -->
+
+<!-- About Page -->
+<section
+  id="aboutPage"
+  
+  class="min-h-screen flex flex-col md:flex-row bg-gray-900 text-white dark:bg-white dark:text-black "
+>
+  <!--Image-->
+  <div
+    class="md:w-1/2 w-full 
+           flex justify-center items-center
+           py-12"
+  >
+    <img
+      src="Photo2.jpg"
+      alt="Farhan Ahmed"
+      class="w-40 h-40 md:w-65 md:h-80 rounded-xl border-4 border-green-400 object-cover shadow-xl"
+    />
+  </div>
+
+  <!-- About Text-->
+  <div
+    class="md:w-1/2 w-full 
+           flex flex-col justify-center
+           px-8 md:px-16 py-12 gap-6"
+  >
+    <h2 class="text-3xl md:text-4xl font-bold text-center">
+      About Me
+    </h2>
+
+    <p class="text-base md:text-lg leading-relaxed">
+      Hello, I'm <strong>Farhan Ahmed</strong>, a <strong>B.Tech graduate in Artificial Intelligence and Machine Learning</strong> from <strong>St. Thomas College of Engineering and Technology,Kolkata</strong>.
+      I have a strong foundation in Java, Python, and modern web technologies,
+      with hands-on experience in building machine learning models as well as
+      developing full-stack applications.
+      I enjoy working across both <strong>frontend and backend technologies</strong>,
+      combining data-driven intelligence with clean, scalable software design.
+      This portfolio showcases my journey, projects, and growing skill set.
+
+    </p>
+
+    <div class="flex justify-center">
+      <a
+        href="https://drive.google.com/file/d/13jikNcvHMo9o3KY9s6OxYMbhH-ORhRoJ/view?usp=sharing"
+        target="_blank"
+        class="bg-green-500 text-white px-6 py-3 rounded-xl
+               hover:bg-gray-700 transition-colors duration-300"
+      >
+        View Resume
+      </a>
+    </div>
+  </div>
+</section>
+<!-- About page ends here -->
+
+<!-- Skills and Tools Page starts here -->
+<section
+  id="skillSection"
+  class="min-h-screen bg-gray-900 text-white dark:bg-white dark:text-black px-6 py-20"
+>
+  <h2 class="text-3xl md:text-4xl font-bold text-center mb-14">
+    Skills & Tools
+  </h2>
+
+  <!-- Skills -->
+  <div
+    class="max-w-6xl mx-auto
+           grid gap-8 justify-items-center
+           grid-cols-2
+           sm:grid-cols-3
+           md:grid-cols-4
+           lg:grid-cols-5"
+  >
+    <!-- Programming Languages -->
+    <div class="skill-card"><i class="devicon-java-plain colored text-4xl"></i></div>
+    <div class="skill-card"><i class="devicon-python-plain colored text-4xl"></i></div>
+    <div class="skill-card"><i class="devicon-javascript-plain colored text-4xl"></i></div>
+    <div class="skill-card"><i class="devicon-cplusplus-plain colored text-4xl"></i></div>
+
+
+    <!-- Web Dev -->
+    <div class="skill-card"><i class="devicon-html5-plain colored text-4xl"></i></div>
+    <div class="skill-card"><i class="devicon-css3-plain colored text-4xl"></i></div>
+    <div class="skill-card"><i class="devicon-tailwindcss-plain colored text-4xl"></i></div>
+    <div class="skill-card"><i class="devicon-react-original colored text-4xl"></i></div>
+
+    <!-- Backend / Databases -->
+    <div class="skill-card"><i class="devicon-spring-plain colored text-4xl"></i></div>
+    <div class="skill-card"><i class="devicon-mysql-plain colored text-4xl"></i></div>
+    <div class="skill-card"><i class="devicon-mongodb-plain colored text-4xl"></i></div>
+
+    <!-- Tools -->
+    <div class="skill-card"><i class="devicon-git-plain colored text-4xl"></i></div>
+    <div class="skill-card"><i class="devicon-github-original colored text-4xl"></i></div>
+    <div class="skill-card"><i class="devicon-vscode-plain colored text-4xl"></i></div>
+    <div class="skill-card"><i class="devicon-intellij-plain colored text-4xl"></i></div>
+    <div class="skill-card"><i class="devicon-jupyter-plain colored text-4xl"></i></div>    
+  </div>
+</section>
+<!-- Skills and Tools ends here -->
+
+
+<!-- Projects Page starts here -->
+<section
+  id="projectSection"
+  class="min-h-screen px-6 py-20 bg-gray-900 text-white dark:bg-white dark:text-black"
+>
+  <h2 class="text-3xl md:text-4xl font-bold text-center mb-14">
+    Projects
+  </h2>
+
+  <!-- Pojects Container -->
+  <div class="max-w-6xl mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    <!-- Individual Project Cards- Project-1 -->
+    <div class="project-card">
+      <h3 class="text-xl font-bold mb-3">Brain Tumor Detection</h3>
+      <p class="text-sm text-black mb-4">CNN-based deep learning model using <strong> Python </strong>, <strong>TensorFlow</strong>, MRI images to detect brain tumors.</p>
+      <a href="https://github.com/frhanahmed/Brain-Tumor-Detection.git" target="_blank" class="text-blue-600 font-semibold hover:underline">View on GitHub →</a>
+    </div>
+
+    <!-- Individual Project Cards- Project-2 -->
+    <div
+      class="project-card"
+    >
+      <h3 class="text-xl font-bold mb-3">
+        Spam Detection
+      </h3>
+      <p class="text-sm text-black mb-4">
+        Machine learning application using <strong>Python</strong>, <strong>NLP</strong>, <strong>trained Naive-Bayes</strong> model to classify spam messages and emails.
+      </p>
+      <a
+        href="https://github.com/frhanahmed/SpamPrediction.git"
+        target="_blank"
+        class="text-blue-600 font-semibold hover:underline"
+      >
+        View on GitHub →
+      </a>
+    </div>
+
+    <!-- Individual Project Cards- Project-3 -->
+    <div
+      class="project-card"
+    >
+      <h3 class="text-xl font-bold mb-3">
+        ATM Simulation System
+      </h3>
+      <p class="text-sm text-black mb-4">
+        <strong>Java Swing & AWT</strong> based desktop application simulating ATM operations.
+      </p>
+      <a
+        href="https://github.com/frhanahmed/ATM_Simulation_System_JAVA.git"
+        target="_blank"
+        class="text-blue-600 font-semibold hover:underline"
+      >
+        View on GitHub →
+      </a>
+    </div>
+    <!-- Individual Project Cards- Project-4 -->
+    <div
+      class="project-card"
+    >
+      <h3 class="text-xl font-bold mb-3">
+        Calculator
+      </h3>
+      <p class="text-sm text-black mb-4">
+        A desktop-based GUI calculator application developed using <strong>Python’s Tkinter</strong> library to perform basic arithmetic operations.
+      </p>
+      <a
+        href="https://github.com/frhanahmed/Calculator_Tkinter.git"
+        target="_blank"
+        class="text-blue-600 font-semibold hover:underline"
+      >
+        View on GitHub →
+      </a>
+    </div>
+  </div>
+</section>
+<!-- Project page ends here -->
+
+<!-- Contact Page starts here -->
+<section
+  id="contactPage"
+  class="min-h-screen  px-6 py-20 bg-gray-900 text-white dark:bg-white dark:text-black"
+>
+  <h2 class="text-3xl md:text-4xl font-bold text-center mb-14">
+    Contact Me
+  </h2>
+  
+
+  <div
+    class="max-w-6xl mx-auto
+           flex flex-col md:flex-row
+           gap-10"
+  >
+      <!--Contact Details-->
+    <div
+      class="md:w-1/2 w-full      
+             rounded-2xl
+             px-8 py-10
+             flex flex-col gap-6"
+    >
+      <p class="text-base md:text-lg leading-relaxed">
+        I'd love to hear from you! Whether you have a project in mind,
+        a question, or found any issue — let's connect and build
+        something amazing together.
+      </p>
+
+      <ul class="space-y-3 text-sm md:text-base">
+        <li>
+          📧 Email:
+          <a
+            href="mailto:frhanahmedf21@gmail.com"
+            class="no-underline hover:underline hover:text-blue-600"
+          >
+            frhanahmedf21@gmail.com
+          </a>
+        </li>
+        <li>
+          📞 Phone:
+          <a
+            href="tel:+919477046491"
+            class="no-underline hover:underline hover:text-blue-600"
+          >
+            +91 94770 46491
+          </a>
+        </li>
+        <li>
+          💻 GitHub:
+          <a
+            href="https://github.com/frhanahmed"
+            target="_blank"
+            class="no-underline hover:underline hover:text-blue-600"
+          >
+            frhanahmed
+          </a>
+        </li>
+        <li>
+          🔗 LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/farhanahmedf21/"
+            target="_blank"
+            class="no-underline hover:underline hover:text-blue-600"
+          >
+            Farhan Ahmed
+          </a>
+        </li>
+        <li>
+          🧠 LeetCode:
+          <a
+            href="https://leetcode.com/frhanahmedf21/"
+            target="_blank"
+            class="no-underline hover:underline hover:text-blue-600"
+          >
+            frhanahmedf21
+          </a>
+        </li>
+      </ul>
+
+      <div>
+        <p class="font-semibold mb-2">
+          Connect with me:
+        </p>
+        <div class="flex gap-4 flex-wrap">
+          <a
+            href="https://www.facebook.com/frhanahmed21"
+            target="_blank"
+            class="no-underline hover:underline hover:text-blue-600"
+          >
+            Facebook
+          </a>
+          <a
+            href="https://www.instagram.com/frhanahmed21/"
+            target="_blank"
+            class="no-underline hover:underline hover:text-blue-600"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://x.com/Frhan2106"
+            target="_blank"
+            class="no-underline hover:underline hover:text-blue-600"
+          >
+            Twitter (X)
+          </a>
+          <a
+            href="https://discordapp.com/users/frhanahmed21"
+            target="_blank"
+            class="no-underline hover:underline hover:text-blue-600"
+          >
+            Discord
+          </a>
+          <a
+            href="https://wa.me/+919477046491"
+            target="_blank"
+            class="no-underline hover:underline hover:text-blue-600"
+          >
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+<div class="md:w-1/2 w-full">
+  <div class="bg-gray-900 text-white dark:bg-white dark:text-black rounded-2xl p-8 shadow-lg">
+
+    <h2 class="text-3xl font-bold bg-gray-900 text-white dark:bg-white dark:text-black mb-2">
+      Get in Touch
+    </h2>
+
+    <p class="dark:text-gray-900 text-amber-50 mb-8">
+      Fill out the form below so that I can connect with you personally as soon as possible.
+    </p>
+
+    <form id="contactForm" class="space-y-6">
+      <div>
+        <label class="block font-medium bg-gray-900 text-white dark:bg-white dark:text-black mb-1">
+          Name
+        </label>
+        <input
+          type="text"
+          name="name"
+          placeholder="  Your name"
+          required
+          class="w-full  dark: bg-white rounded-lg text-gray-900 border border-gray-300
+                 px-4 py-3
+                 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+      </div>
+
+      <div>
+        <label class="block font-medium bg-gray-900 text-white dark:bg-white dark:text-black mb-1">
+          Email
+        </label>
+        <input
+          type="email"
+          name="email"
+          placeholder="  Your email"
+          required
+          class="w-full dark: bg-white rounded-lg text-gray-900 border border-gray-300
+                 px-4 py-3
+                 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+      </div>
+
+      <div>
+        <label class="block font-medium bg-gray-900 text-white dark:bg-white dark:text-black">
+          Message
+        </label>
+        <textarea
+          name="message"
+          rows="4"
+          placeholder="  Your message"
+          required
+          class="w-full dark: bg-white rounded-lg text-gray-900 border border-gray-300
+                 px-4 py-3 resize-none
+                 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        ></textarea>
+      </div>
+        <button
+        type="submit"
+        class="
+               bg-green-500 text-white px-6 py-3 mt-3 rounded-xl w-full
+               hover:bg-gray-700 transition-colors duration-300 cursor-pointer"
+      >
+        Send Message
+      </button>
+    </form>
+  </div>
+</div>
+
+
+  </div>
+  <footer
+    class="mt-16 border-t border-black/20 pt-6 text-center"
+  >
+    <p class="text-sm md:text-base">
+      © <span id="year"></span> Farhan Ahmed. All Rights Reserved.
+    </p>
+  </footer>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="scripts.js"></script>
+</body> 
+</html>
