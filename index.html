@@ -49,7 +49,10 @@
   <!-- Mobile View -->
   <div
     id="mobileMenu"
-    class="hidden md:hidden bg-green-400 px-6 py-4 flex flex-col gap-4 font-semibold"
+    class="hidden absolute top-full left-0 w-full
+         bg-green-400 px-6 py-4
+         flex flex-col gap-4 font-semibold
+         md:hidden z-40"
   >
     <a href="#welcomePage" onclick="toggleMenu()">Home</a>
     <a href="#aboutPage" onclick="toggleMenu()">About</a>

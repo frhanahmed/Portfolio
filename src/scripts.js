@@ -1,5 +1,10 @@
+// function for mobile-views
+  function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("hidden");
+
+  }
 const html = document.documentElement;
-  const slider = document.getElementById("toggleSlider");
+const slider = document.getElementById("toggleSlider");
 
   // Code for dark-light mode
   function toggleTheme(el) {
